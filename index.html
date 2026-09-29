@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <p class="small-title">MY PRODUCTIVITY</p>
+                <h1>Task<span>Flow</span></h1>
+                <p class="subtitle">Bugungi vazifalaringizni tartibga soling.</p>
+            </div>
+
+            <div class="date">
+                <p id="today"></p>
+            </div>
+        </div>
+
+        <div class="add-box">
+            <input type="text" id="taskInput" placeholder="Yangi vazifa yozing...">
+            <button id="addBtn">+ Qo'shish</button>
+        </div>
+
+        <div class="top">
+            <h2>Mening vazifalarim</h2>
+            <p><span id="taskCount">0</span> ta vazifa</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Vazifani qidirish...">
+        </div>
+
+        <div class="tasks" id="taskList">
+            
+        </div>
+
+        <div class="empty" id="emptyState">
+            <div class="empty-icon">✓</div>
+            <h3>Hozircha vazifalar yo'q</h3>
+            <p>Yangi vazifa qo'shib, kuningizni rejalashtiring.</p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
